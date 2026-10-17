@@ -2,13 +2,12 @@ import re
 from .base import BasePreset
 
 class WeChatPreset(BasePreset):
-    """Preset optimized for WeChat Official Account articles printed to PDF."""
+    """Preset optimized for WeChat web articles printed to PDF."""
     name: str = "wechat"
-    description: str = "WeChat Official Account Preset (cleans headers, dates, and comment sections)"
+    description: str = "WeChat Article Preset (cleans author bars, dates, navigation, and comment sections)"
 
     HEADER_KEYWORDS = [
-        "已付费", "人付费", "原创", "神光的幸福生活", "微信公众号", "阅读原文",
-        "神说要有光"
+        "原创", "微信公众号", "阅读原文", "关注我们", "官方账号"
     ]
 
     # Broad triggers: if line contains these and is relatively short, it's a cutoff
@@ -38,6 +37,9 @@ class WeChatPreset(BasePreset):
                 return True
             # Match date like "2026-07-19"
             if re.match(r'^\d{4}[-/.]\d{1,2}[-/.]\d{1,2}', text):
+                return True
+            # General reading statistics or metadata
+            if re.match(r'^\d+人', text):
                 return True
         return False
 

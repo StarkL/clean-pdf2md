@@ -16,7 +16,8 @@ class TestCleanPDF2MD(unittest.TestCase):
     def test_wechat_noise_filter(self):
         p = WeChatPreset()
         # Page 1 header noise
-        self.assertTrue(p.should_filter_header("已付费", 0))
+        self.assertTrue(p.should_filter_header("原创", 0))
+        self.assertTrue(p.should_filter_header("阅读原文", 0))
         self.assertTrue(p.should_filter_header("2026年7月19日", 0))
         self.assertTrue(p.should_filter_header("山东", 0))
         self.assertFalse(p.should_filter_header("正常正文标题", 0))
