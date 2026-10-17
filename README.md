@@ -7,7 +7,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/your-username/clean-pdf2md/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/StarkL/clean-pdf2md/pulls)
 [![Hardware: Zero-GPU](https://img.shields.io/badge/Hardware-Zero--GPU%20%7C%20CPU-orange.svg)](#)
 [![LLM: Zero-API-Key](https://img.shields.io/badge/LLM-Zero--API--Key%20%7C%20100%25%20Offline-green.svg)](#)
 
@@ -86,7 +86,7 @@ flowchart LR
 ### 方式一：从源码安装（推荐）
 
 ```bash
-git clone https://github.com/your-username/clean-pdf2md.git
+git clone https://github.com/StarkL/clean-pdf2md.git
 cd clean-pdf2md
 pip install -e .
 ```

@@ -32,6 +32,6 @@ dependencies = [
 clean-pdf2md = "clean_pdf2md.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/your-username/clean-pdf2md"
-Repository = "https://github.com/your-username/clean-pdf2md"
-Issues = "https://github.com/your-username/clean-pdf2md/issues"
+Homepage = "https://github.com/StarkL/clean-pdf2md"
+Repository = "https://github.com/StarkL/clean-pdf2md"
+Issues = "https://github.com/StarkL/clean-pdf2md/issues"
